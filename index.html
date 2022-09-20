@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Resolve nearest Ethereum Block to DateTime.</title>
+    <script defer src="code.js"></script>
+</head>
+<body>
+    <h1>Resolve nearest Ethereum Block to DateTime:</h1>
+    <p style="font-style:italic">Every time (specified or returned) on this page is UTC.</p>
+    <p>Chose your date and time:</p>
+    <input id="dateInput" type="date" value="2018-07-22" min="2015-07-30" />
+    <input id="timeInput" type="time" step="1" value="13:30" />
+    <button id="calcButton">Resolve nearest Blocks</button><span id="executionTime"></span>
+    <div id="resultPlane" style="display:none">
+        <p>block before: <span id="blockBefore">?</span> (<span id="timeBefore">23:33:22 05-16-2017</span>) [<span id="hashBefore">0xEIUHFIUEWHFIUEWHF</span>]</p>
+        <p>block after: <span id="blockAfter">?</span> (<span id="timeAfter">23:33:22 05-16-2017</span>) [<span id="hashAfter">0xEIUHFIUEWHFIUEWHF</span>]</p>
+    </div>
+</body>
+</html>
